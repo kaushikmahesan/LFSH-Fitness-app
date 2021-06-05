@@ -10,3 +10,11 @@ User can look for workouts in the workout recommendation section, and can track 
 * Firebase Auth
 * Room
 * Figma
+
+# Developers
+
+Kaushik Mahesan and Ashwin Raja
+
+# Testing and Documentation
+
+Harikrishnaa S
