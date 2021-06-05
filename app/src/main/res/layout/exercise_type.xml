@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".exercisetype">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardBackgroundColor="@color/red"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="30dp"
+            android:paddingBottom="20dp">
+
+
+            <TextView
+                android:id="@+id/heading"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="@font/bangers"
+                android:text="Exercises "
+                android:textColor="@color/white"
+                android:textSize="40sp"
+                app:layout_constraintBottom_toTopOf="@id/musclegainbutton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.498"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="34dp"
+                android:layout_height="27dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="56dp"
+                android:layout_marginRight="56dp"
+                android:background="@color/material_on_surface_disabled"
+                android:src="@drawable/back"
+                app:layout_constraintBottom_toBottomOf="@id/heading"
+                app:layout_constraintEnd_toStartOf="@+id/heading"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/heading"
+                app:layout_constraintVertical_bias="0.555">
+
+            </ImageButton>
+
+            <Button
+                android:id="@+id/musclegainbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edge_button"
+                android:drawablePadding="5dp"
+                android:paddingHorizontal="115dp"
+                android:paddingVertical="20dp"
+                android:text="Muscle Gain"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@id/musclegaintext"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/heading" />
+
+            <TextView
+                android:id="@+id/musclegaintext"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="If your goal is to gain muscle mass, This is the right set of workouts for you!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/weightlossbutton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/musclegainbutton" />
+
+            <Button
+                android:id="@+id/weightlossbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edge_button"
+                android:paddingHorizontal="115dp"
+                android:paddingVertical="20dp"
+                android:text="WEIGHT LOSS"
+                app:layout_constraintBottom_toTopOf="@id/weightlosstext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/musclegaintext" />
+
+            <TextView
+                android:id="@+id/weightlosstext"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Want to burn that stubborn fat? These are the right set of exercises for you!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toTopOf="@id/warmupbutton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/weightlossbutton" />
+
+            <Button
+                android:id="@+id/warmupbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_edge_button"
+                android:paddingHorizontal="130dp"
+                android:paddingVertical="20dp"
+                android:text="WARM UP"
+                app:layout_constraintBottom_toTopOf="@id/warmuptext"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weightlosstext"
+                app:layout_goneMarginBottom="10dp" />
+
+            <TextView
+                android:id="@+id/warmuptext"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:text="Do these exercises before your workout to make the most out of them!"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/warmupbutton" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

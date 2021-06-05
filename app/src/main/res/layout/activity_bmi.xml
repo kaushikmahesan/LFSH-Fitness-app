@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/backred"
+                android:background="@color/material_on_surface_disabled"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/title"
+                app:layout_constraintBottom_toBottomOf="@id/title"
+                android:layout_marginLeft="30dp"
+                >
+            </ImageButton>
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="BMI"
+                android:textColor="@color/red"
+                android:textSize="40sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:fontFamily="@font/bangers">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/aboutbmi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="BMI is the measure of body fat based on height and weight"
+                app:layout_constraintTop_toBottomOf="@id/title"
+                android:textSize="20sp"
+                android:textAlignment="center"
+                />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintbmi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/aboutbmi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginTop="5dp"
+                >
+                <TextView
+                    android:id="@+id/textYour"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YOUR"
+                    android:textSize="30sp"
+                    android:textColor="@color/red"
+                    app:layout_constraintTop_toTopOf="@id/BMIvalue"
+                    android:layout_marginTop="20dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/textBMI"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="BMI"
+                    android:textSize="42sp"
+                    app:layout_constraintTop_toTopOf="@id/textYour"
+                    android:layout_marginTop="30dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red">
+                </TextView>
+                <TextView
+                    android:id="@+id/BMIvalue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textSize="90sp"
+                    android:layout_marginLeft="10dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/red"
+                    app:layout_constraintStart_toEndOf="@id/textBMI">
+                </TextView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+            <TextView
+                android:id="@+id/yourBMIintext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:text="You are perfect weight!"
+                app:layout_constraintTop_toBottomOf="@id/constraintbmi"
+                android:textSize="20sp"
+                android:textAlignment="center">
+            </TextView>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:src="@drawable/bmi_chart"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="40dp"
+                app:layout_constraintTop_toBottomOf="@id/yourBMIintext">
+            </ImageView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChangeHeight">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingLeft="0dp"
+            android:paddingBottom="20dp">
+
+            <ImageButton
+                android:id="@+id/backButton"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/backred"
+                android:background="@color/material_on_surface_disabled"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="@id/title"
+                app:layout_constraintBottom_toBottomOf="@id/title"
+                android:layout_marginLeft="30dp"
+                >
+
+            </ImageButton>
+
+            <TextView
+                android:id="@+id/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="28dp"
+                android:text="Biometrics"
+                android:textColor="@color/red"
+                android:textSize="40sp"
+                android:fontFamily="@font/bangers"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Height : 178 cm"
+                android:textColor="@color/red"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/enterheight"
+                app:layout_constraintTop_toBottomOf="@id/title">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/enterheight"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter height in cm"
+                android:textSize="30sp"
+                app:layout_constraintRight_toLeftOf="@id/enterheightbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/height"
+                android:layout_marginLeft="30dp">
+
+            </EditText>
+
+            <TextView
+                android:id="@+id/weight"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Weight : 70 kg"
+                android:textColor="@color/red"
+                android:textSize="35sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/enterweight"
+                app:layout_constraintTop_toBottomOf="@id/enterheight"></TextView>
+
+            <EditText
+                android:id="@+id/enterweight"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:hint="Enter weight in kg"
+                android:textSize="30sp"
+                app:layout_constraintRight_toLeftOf="@+id/enterweightbutton"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/weight"
+                android:layout_marginLeft="30dp">
+
+            </EditText>
+
+            <ImageButton
+                android:id="@+id/enterheightbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@color/material_on_surface_disabled"
+                android:src="@drawable/enter"
+                app:layout_constraintBottom_toBottomOf="@+id/enterheight"
+                app:layout_constraintHeight_percent=".25"
+                app:layout_constraintLeft_toRightOf="@id/enterheight"
+                app:layout_constraintTop_toTopOf="@id/enterheight">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/enterweightbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
+                android:background="@color/material_on_surface_disabled"
+                android:src="@drawable/enter"
+                app:layout_constraintBottom_toBottomOf="@+id/enterweight"
+                app:layout_constraintHeight_percent=".25"
+                app:layout_constraintLeft_toRightOf="@id/enterweight"
+                app:layout_constraintTop_toTopOf="@id/enterweight">
+
+            </ImageButton>
+
+            <ImageView
+                android:id="@+id/graph1"
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_margin="15dp"
+                android:background="@color/white"
+                android:src="@drawable/graph_1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/enterweight">
+
+            </ImageView>
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:src="@drawable/graph_2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/graph1">
+
+            </ImageView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
