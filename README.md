@@ -18,3 +18,7 @@ Kaushik Mahesan and Ashwin Raja
 # Testing and Documentation
 
 Harikrishnaa S
+
+# Preview
+
+![](images/logingitr.jpg) ![](images/registergitr.jpg) ![](images/homepagegitr.jpg) ![](images/caloriecountgitr.jpg) ![](images/workoutsgitr.jpg)
