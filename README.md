@@ -21,4 +21,4 @@ Harikrishnaa S
 
 # Preview
 
-![](images/logingitr.jpg) ![](images/registergitr.jpg) ![](images/homepagegitr.jpg) ![](images/caloriecountgitr.jpg) ![](images/workoutsgitr.jpg)
+![](images/logingitr.jpg) ![](images/registergitr.jpg) ![](images/homepagegitr.jpg) ![](images/caloriecountgitr.jpg) ![](images/workoutsgitr.jpg) ![](images/BMI.jpeg) ![](images/Workouts_push.jpeg) ![](images/enterInput.jpeg) ![](images/exercise.jpeg) ![](images/food_entry.jpeg) ![](images/profile.jpeg)
